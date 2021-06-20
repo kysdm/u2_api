@@ -1,0 +1,10 @@
+.vscode
+.history
+__pycache__
+log
+sa
+rclone.conf
+*.log
+*.db
+credentials.json
+*.pickle

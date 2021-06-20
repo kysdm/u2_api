@@ -37,6 +37,7 @@
 
 |  参数   | 数据类型  | 说明  |
 |  ----  | :--:  | ----  |
+| uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
 | scope [optional] | str | 魔法类型 `global` `public` `private` `all`<br>默认值 `all`|
 | maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `30` |
@@ -50,6 +51,7 @@
 
 |  参数   | 数据类型  | 说明  |
 |  ----  | :--:  | ----  |
+| uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
 | maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `30` |
 
@@ -62,7 +64,22 @@
 
 |  参数   | 数据类型  | 说明  |
 |  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
 | maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `50` |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/5.png)
+
+****
+
+## 历史修改
+`GET` `https://u2.kysdm.com/api/v1/diff`
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| torrent  | int | 种子id |
+| token  | str | 鉴权中返回的值 |
+| maximum [optional]| int | 返回数据条数<br>默认值 `3`<br>最大 `15` |
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/6.png)
