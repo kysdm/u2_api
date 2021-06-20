@@ -37,7 +37,7 @@
 
 |  参数   | 数据类型  | 说明  |
 |  ----  | :--:  | ----  |
-| Authorization  | str | 将 token 添加到请求头 heraders 中 |
+| token  | str | 鉴权中返回的值 |
 | scope [optional] | str | 魔法类型 `global` `public` `private` `all`<br>默认值 `all`|
 | maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `30` |
 
@@ -50,7 +50,7 @@
 
 |  参数   | 数据类型  | 说明  |
 |  ----  | :--:  | ----  |
-| Authorization  | str | 将 token 添加到请求头 heraders 中 |
+| token  | str | 鉴权中返回的值 |
 | maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `30` |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/4.png)
@@ -62,7 +62,7 @@
 
 |  参数   | 数据类型  | 说明  |
 |  :--:  | :--:  | ----  |
-| Authorization  | str | 将 token 添加到请求头 heraders 中 |
+| token  | str | 鉴权中返回的值 |
 | maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `50` |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/5.png)
