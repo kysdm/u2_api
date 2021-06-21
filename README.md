@@ -1,6 +1,6 @@
 # U2-API (迫真)
 完全不知道文档应该怎么写，凑合看下吧。 (  
-服务器比较拉跨再加上技术拉跨，无法保证高可用性。 (  
+因API不是直接爬网页的，故无法开源。(开源了也没用.avif)  
 服务器网络还是挺拉跨的，本地访问平均响应时间750ms，服务器内部访问平均响应时间25ms。🌿🌿🌿
 
 ****
@@ -87,3 +87,19 @@
 | maximum [optional]| int | 返回数据条数<br>默认值 `3`<br>最大 `15` |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/6.png)
+
+****
+
+## 新种子 (伪RSS)
+> 可能你会看到秒发秒删的种子 (丢人操作)
+
+`GET` `https://u2.kysdm.com/api/v1/torrent`
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| scope [unused] | str | 种子类型 `new`<br>默认值 `new`|
+| maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `100` |
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/7.png)
