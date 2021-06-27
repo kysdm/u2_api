@@ -77,14 +77,17 @@
 > 5月份u2改了css，忘记更新代码，到6月20日这段时间的bbcode都没换行符。  
 > 6月20日前仅通过候选或者直接上传时会写入种子信息，其余修改记录里为空。
 
-`GET` `https://u2.kysdm.com/api/v1/diff`
+`GET` `https://u2.kysdm.com/api/v1/history`
 
 |  参数   | 数据类型  | 说明  |
 |  :--:  | :--:  | ----  |
 | uid  | int | u2账户id |
 | torrent  | int | 种子id |
 | token  | str | 鉴权中返回的值 |
-| maximum [optional]| int | 返回数据条数<br>默认值 `3`<br>最大 `15` |
+| maximum [optional]| int | 返回数据条数<br>默认值 `3`<br>最大 `50` |
+
+> 弃用 diff  
+> 改为 history
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/6.png)
 
