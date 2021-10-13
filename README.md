@@ -107,3 +107,32 @@
 | simple [optional]| int | `0` 完整信息(包含种子描述等信息)[默认]<br>`1` 简略信息(不包含种子描述等信息) |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/7.png)
+
+****
+
+## 邀请树
+> 单用户
+
+`GET` `https://u2.kysdm.com/api/v1/user/`
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| user | int | 被查询用户的id |
+| simple [optional]| int | `0` 完整信息(包含改名记录)[默认]<br>`1` 简略信息(不包含改名记录) |
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/8.png)
+
+> 多用户
+
+`POST` `https://u2.kysdm.com/api/v1/user/`
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| user | str | 被查询用户的id组 |
+| simple [optional]| int | `0` 完整信息(包含改名记录)[默认]<br>`1` 简略信息(不包含改名记录) |
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/9.png)
