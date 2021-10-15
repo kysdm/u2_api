@@ -132,7 +132,7 @@
 |  :--:  | :--:  | ----  |
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
-| user | str | 被查询用户的id组 |
+| user | str | 被查询用户的id组(单次最大100个,超长截断) |
 | simple [optional]| int | `0` 完整信息(包含改名记录)[默认]<br>`1` 简略信息(不包含改名记录) |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/9.png)
