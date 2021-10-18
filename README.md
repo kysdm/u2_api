@@ -120,6 +120,7 @@
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
 | user | int | 被查询用户的id |
+| direction [optional] | int |  `0` 向上查询邀请树(不包含分支)[默认]<br>`1` 向下查询邀请树(不包含分支) |
 | simple [optional]| int | `0` 完整信息(包含改名记录)[默认]<br>`1` 简略信息(不包含改名记录) |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/8.png)
@@ -133,6 +134,7 @@
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
 | user | str | 被查询用户的id组 (单次最大100个<超长截断>) |
+| direction [optional] | int |  `0` 向上查询邀请树(不包含分支)[默认]<br>`1` 向下查询邀请树(不包含分支) |
 | simple [optional]| int | `0` 完整信息(包含改名记录)[默认]<br>`1` 简略信息(不包含改名记录) |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/9.png)
