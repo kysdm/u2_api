@@ -111,8 +111,8 @@
 ****
 
 ## 候选
-> ⚠　此方法返回的种子体积并不精确 <end值为0的种子>  
->　　(候选区需要 MOD 才有权限下载种子文件)
+> 此方法返回的种子体积并不精确 <end值为0的种子> (候选区需要 MOD 才有权限下载种子文件)  
+> 此方法会返回被拒绝的候选 (暂时不考虑抓取候选状态)
 
 `GET` `https://u2.kysdm.com/api/v1/offer`
 
@@ -122,8 +122,9 @@
 | token  | str | 鉴权中返回的值 |
 | maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `30` |
 | simple [optional]| int | `0` 完整信息(包含种子描述等信息)[默认]<br>`1` 简略信息(不包含种子描述等信息) |
+| end [optional]| int | `0` 不包含已经通过候选的种子[默认]<br>`1` 包含已经通过候选的种子 |
 
-![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/10.png)
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/11.png)
 
 ****
 
