@@ -110,6 +110,23 @@
 
 ****
 
+## 候选
+> ⚠　此方法返回的种子体积并不精确 <end值为0的种子>  
+>　　(候选区需要 MOD 才有权限下载种子文件)
+
+`GET` `https://u2.kysdm.com/api/v1/offer`
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `30` |
+| simple [optional]| int | `0` 完整信息(包含种子描述等信息)[默认]<br>`1` 简略信息(不包含种子描述等信息) |
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/10.png)
+
+****
+
 ## 邀请树
 > 单用户
 
