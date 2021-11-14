@@ -1,9 +1,4 @@
-# U2-API (迫真)
-完全不知道文档应该怎么写，凑合看下吧。 (  
-因API不是直接爬网页的，故无法开源。(开源了也没用.avif)  
-服务器网络还是挺拉跨的，本地访问平均响应时间750ms，服务器内部访问平均响应时间25ms。🌿🌿🌿
-
-****
+# U2-API
 
 ## 鉴权
 `POST` `https://u2.kysdm.com/api/v1/token`
@@ -168,3 +163,20 @@
 | simple [optional]| int | `0` 完整信息(包含改名记录)[默认]<br>`1` 简略信息(不包含改名记录) |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/10.png)
+
+****
+
+## 邀请价格
+> 刚把抓取邀请价格函数的整合到 API  
+> 所以数据还不多
+
+`GET` `https://u2.kysdm.com/api/v1/invite_uc`
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| maximum [optional]| int | 返回数据条数<br>默认值 `50`<br>最大 `600` |
+
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/12.png)
