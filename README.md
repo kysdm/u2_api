@@ -22,7 +22,7 @@
 
 将返回 token，token 请妥善保管。  
 此 token 暂无有效期。  
-如需重置 token ，重复此步骤即可。
+如需重置 token ，重复此步骤即可。(注意：重置后的 token 不会立即生效)  
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/2.png)
 
@@ -176,7 +176,7 @@
 |  :--:  | :--:  | ----  |
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
-| maximum [optional]| int | 返回数据条数<br>默认值 `50`<br>最大 `600` |
+| maximum [optional]| int | 返回数据条数<br>默认值 `50`<br>最大 `5000` |
 
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/12.png)
