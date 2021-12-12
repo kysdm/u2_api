@@ -180,3 +180,35 @@
 
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/12.png)
+
+****
+
+## 版本库
+> U2开发日志
+
+`GET` `https://u2.kysdm.com/api/v1/repository`
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| maximum [optional]| int | 返回数据条数<br>默认值 `3`<br>最大 `15` |
+
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/13.png)
+
+****
+
+## 首页公告
+> U2公告
+
+`GET` `https://u2.kysdm.com/api/v1/notice`
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| maximum [optional]| int | 返回数据条数<br>默认值 `3`<br>最大 `10` |
+
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/14.png)
