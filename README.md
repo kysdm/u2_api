@@ -202,7 +202,7 @@
 ## 首页公告
 > U2公告
 
-`GET` `https://u2.kysdm.com/api/v1/notice`
+`GET` `https://u2.kysdm.com/api/v1/announcement`
 
 |  参数   | 数据类型  | 说明  |
 |  :--:  | :--:  | ----  |
