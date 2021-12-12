@@ -22,7 +22,7 @@
 
 将返回 token，token 请妥善保管。  
 此 token 暂无有效期。  
-如需重置 token ，重复此步骤即可。(注意：重置后的 token 不会立即生效)  
+如需重置 token ，重复此步骤即可。(注意：重置后的 token 不会立即生效，最长等待10分钟。)  
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/2.png)
 
