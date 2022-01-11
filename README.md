@@ -89,7 +89,6 @@
 ****
 
 ## 新种子
-> ~~可能你会看到秒发秒删的种子 (丢人操作)~~
 
 `GET` `https://u2.kysdm.com/api/v1/torrent`
 
@@ -106,7 +105,6 @@
 ****
 
 ## 候选
-> ~~此方法会返回被拒绝的候选 (暂时不考虑抓取候选状态)~~
 
 `GET` `https://u2.kysdm.com/api/v1/offer`
 
@@ -212,3 +210,43 @@
 
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/14.png)
+
+****
+
+## 评论
+> 较高频率抓取  (前3页新种子 / 候选区 / 论坛第一页帖子)  
+> 极低频率抓取  (除较高频率抓取的)  
+
+> 最近的评论
+
+`GET` `https://u2.kysdm.com/api/v1/comment`
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| maximum [optional]| int | 返回数据条数<br>默认值 `3`<br>最大 `15` |
+| type [optional]| str | `forum` 论坛评论[默认]<br>`torrent` 种子评论 |
+
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/15.png)
+
+> 通过唯一标识符精确查找
+
+`POST` `https://u2.kysdm.com/api/v1/comment`
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| topicid [optional]| str | 论坛帖子ID |
+| pid [optional]| str | 论坛楼层ID |
+| torrent_id [optional]| str | 种子ID |
+| cid [optional]| str | 种子楼层ID |
+| type [optional]| str | `forum` 论坛评论[默认]<br>`torrent` 种子评论 |
+
+> `topicid` 和 `pid` 并存时，将抛弃 `topicid`。  
+> `torrent_id` 和 `cid` 并存时，将抛弃 `torrent_id`。  
+> `type` 确定唯一标识符类型
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/16.png)
