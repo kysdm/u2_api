@@ -242,10 +242,10 @@
 |  :--:  | :--:  | ----  |
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
-| topicid [optional]| str | 论坛帖子ID |
-| pid [optional]| str | 论坛楼层ID |
-| torrent_id [optional]| str | 种子ID |
-| cid [optional]| str | 种子楼层ID |
+| topicid [optional]| str | 论坛帖子ID (单次最大15个<超长截断>) |
+| pid [optional]| str | 论坛楼层ID (单次最大30个<超长截断>) |
+| torrent_id [optional]| str | 种子ID (单次最大15个<超长截断>) |
+| cid [optional]| str | 种子楼层ID (单次最大30个<超长截断>) |
 | type [optional]| str | `forum` 论坛评论[默认]<br>`torrent` 种子评论 |
 
 > `topicid` 和 `pid` 并存时，将抛弃 `topicid`。  
