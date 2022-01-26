@@ -1,4 +1,5 @@
 # U2-API
+注意: 当您失去U2的访问权限时，您也会立即失去此API的访问权限。
 
 ## 鉴权
 `POST` `https://u2.kysdm.com/api/v1/token`
@@ -7,7 +8,7 @@
 |  :--:  | :--:  | :--:  |
 | uid  | int | u2账户id |
 
-请将返回 key 值写入[个人说明](https://u2.dmhy.org/usercp.php?action=personal)中，并且在使用中不要移除 key。
+请将返回 key 值写入[个人说明](https://u2.dmhy.org/usercp.php?action=personal)中。
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/1.png)
 
@@ -22,7 +23,7 @@
 
 将返回 token，token 请妥善保管。  
 此 token 暂无有效期。  
-如需重置 token ，重复此步骤即可。(注意：重置后的 token 不会立即生效，最长等待10分钟。)  
+如需重置 token ，重复此步骤即可。  
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/2.png)
 
