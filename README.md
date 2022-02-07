@@ -78,12 +78,15 @@
 |  参数   | 数据类型  | 说明  |
 |  :--:  | :--:  | ----  |
 | uid  | int | u2账户id |
-| torrent  | int | 种子id |
 | token  | str | 鉴权中返回的值 |
+| torrent  | int | 种子id |
+| hash  | int | 种子hash |
 | maximum [optional]| int | 返回数据条数<br>默认值 `3`<br>最大 `50` |
 
-> 弃用 diff  
-> 改为 history
+> 弃用 diff 改为 history  
+
+> `torrent` 和 `hash` 并存时，将抛弃 `hash`。  
+> 注：在候选区的种子，如果种子文件过大，API 会丢失种子文件相关信息 (即通过 `hash` 会查询不到信息,但 `torrent` 可以)。
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/6.png)
 
@@ -243,10 +246,10 @@
 |  :--:  | :--:  | ----  |
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
-| topicid [optional]| str | 论坛帖子ID (单次最大15个<超长截断>) |
-| pid [optional]| str | 论坛楼层ID (单次最大30个<超长截断>) |
-| torrent_id [optional]| str | 种子ID (单次最大15个<超长截断>) |
-| cid [optional]| str | 种子楼层ID (单次最大30个<超长截断>) |
+| topicid | str | 论坛帖子ID (单次最大15个<超长截断>) |
+| pid | str | 论坛楼层ID (单次最大30个<超长截断>) |
+| torrent_id | str | 种子ID (单次最大15个<超长截断>) |
+| cid | str | 种子楼层ID (单次最大30个<超长截断>) |
 | type [optional]| str | `forum` 论坛评论[默认]<br>`torrent` 种子评论 |
 
 > `topicid` 和 `pid` 并存时，将抛弃 `topicid`。  
