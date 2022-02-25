@@ -2,6 +2,8 @@
 注意: 当您失去U2的访问权限时，您也会立即失去此API的访问权限。
 
 ## 鉴权
+> 自动化鉴权 `https://greasyfork.org/zh-CN/scripts/428545`  
+
 `POST` `https://u2.kysdm.com/api/v1/token`
 
 |  参数   | 数据类型  | 说明  |
@@ -154,6 +156,8 @@
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/9.png)
 
 > 邀请树
+
+> 在线查询 `https://u2invitetree.kysdm.workers.dev/`  
 
 `GET` `https://u2.kysdm.com/api/v1/invite/`
 
