@@ -39,7 +39,7 @@
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
 | scope [optional] | str | 魔法类型 `global` `public` `private` `all`<br>默认值 `all`|
-| maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `30` |
+| maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `60` |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/3.png)
 
@@ -52,7 +52,7 @@
 |  ----  | :--:  | ----  |
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
-| maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `30` |
+| maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `60` |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/4.png)
 
@@ -68,7 +68,7 @@
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
 | type  | str | `html` 返回格式为HTML[默认]<br>`bbcode` 返回格式为BBCODE |
-| maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `50` |
+| maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `100` |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/5.png)
 
@@ -86,7 +86,7 @@
 | token  | str | 鉴权中返回的值 |
 | torrent  | int | 种子id |
 | hash  | int | 种子hash |
-| maximum [optional]| int | 返回数据条数<br>默认值 `3`<br>最大 `50` |
+| maximum [optional]| int | 返回数据条数<br>默认值 `3`<br>最大 `100` |
 
 > 弃用 diff 改为 history  
 
@@ -121,7 +121,7 @@
 |  :--:  | :--:  | ----  |
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
-| maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `30` |
+| maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `60` |
 | simple [optional]| int | `0` 完整信息(包含种子描述等信息)[默认]<br>`1` 简略信息(不包含种子描述等信息) |
 | end [optional]| int | `0` 不包含已经通过候选的种子[默认]<br>`1` 包含已经通过候选的种子 |
 
@@ -239,7 +239,7 @@
 |  :--:  | :--:  | ----  |
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
-| maximum [optional]| int | 返回数据条数<br>默认值 `3`<br>最大 `15` |
+| maximum [optional]| int | 返回数据条数<br>默认值 `3`<br>最大 `30` |
 | type [optional]| str | `forum` 论坛评论[默认]<br>`torrent` 种子评论 |
 
 
