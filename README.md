@@ -59,15 +59,12 @@
 ****
 
 ## 聊天
-> 现已停止维护HTML格式的文本，请使用BBCODE格式的文本，预计将在5月1日停止HTML格式的文本返回。  
-
 `GET` `https://u2.kysdm.com/api/v1/msg`
 
 |  参数   | 数据类型  | 说明  |
 |  :--:  | :--:  | ----  |
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
-| type  | str | `html` 返回格式为HTML[默认]<br>`bbcode` 返回格式为BBCODE |
 | maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `100` |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/5.png)
