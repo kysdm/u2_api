@@ -45,6 +45,22 @@
 
 ****
 
+## 魔法叠加
+> 结果缓存 20s  
+> 请勿滥用此方法
+
+`GET` `https://u2.kysdm.com/api/v1/promotion_super`
+
+|  参数   | 数据类型  | 说明  |
+|  ----  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| torrent_id | int | 种子ID |
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/17.png)
+
+****
+
 ## 日志
 `GET` `https://u2.kysdm.com/api/v1/log`
 
@@ -123,6 +139,22 @@
 | end [optional]| int | `0` 不包含已经通过候选的种子[默认]<br>`1` 包含已经通过候选的种子 |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/11.png)
+
+****
+
+## 下载列表
+> 结果缓存 60s  
+> 请勿滥用此方法
+
+`GET` `https://u2.kysdm.com/api/v1/torrent_peer`
+
+|  参数   | 数据类型  | 说明  |
+|  ----  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| torrent_id | int | 种子ID |
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/18.png)
 
 ****
 
