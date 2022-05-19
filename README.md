@@ -24,7 +24,7 @@
 | key | str | 上一步操作返回的 key 值 |
 
 将返回 token，token 请妥善保管。  
-此 token 暂无有效期。  
+~~此 token 暂无有效期。~~ token 闲置超过60天自动失效。  
 如需重置 token ，重复此步骤即可。  
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/2.png)
