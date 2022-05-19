@@ -47,7 +47,8 @@
 
 ## 魔法叠加
 > 结果缓存 20s  
-> 请勿滥用此方法
+> 请勿滥用此方法  
+> 返回的数据`get_time`时间无法满足需求时，再使用`skip_cache`参数跳过缓存进行请求。
 
 `GET` `https://u2.kysdm.com/api/v1/promotion_super`
 
@@ -56,6 +57,7 @@
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
 | torrent_id | int | 种子ID |
+| skip_cache [optional] | int | `0` 正常请求[默认]<br>`1` 跳过缓存请求 |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/17.png)
 
