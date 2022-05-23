@@ -138,7 +138,6 @@
 | token  | str | 鉴权中返回的值 |
 | maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `60` |
 | simple [optional]| int | `0` 完整信息(包含种子描述等信息)[默认]<br>`1` 简略信息(不包含种子描述等信息) |
-| end [optional]| int | `0` 不包含已经通过候选的种子[默认]<br>`1` 包含已经通过候选的种子 |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/11.png)
 
