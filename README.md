@@ -128,6 +128,23 @@
 
 ****
 
+## 特定做种人数
+> 结果缓存 300s  
+
+`GET` `https://u2.kysdm.com/api/v1/torrent_low_seed`
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| minseeder [optional] | int | 最小做种人数<br>默认值 `1`|
+| maxseeder [optional] | int | 最小做种人数<br>默认值 `1`|
+| maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `10000` |
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/19.png)
+
+****
+
 ## 候选
 
 `GET` `https://u2.kysdm.com/api/v1/offer`
@@ -206,8 +223,6 @@
 ****
 
 ## 邀请价格
-> 刚把抓取邀请价格的函数整合到 API  
-> 所以数据还不多
 
 `GET` `https://u2.kysdm.com/api/v1/invite_uc`
 
