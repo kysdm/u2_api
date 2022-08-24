@@ -1,5 +1,9 @@
 # U2-API
+
 注意: 当您失去U2的访问权限时，您也会立即失去此API的访问权限。
+
+<a href="https://u2.dmhy.org/"><img src="https://u2.dmhy.org/pic/logo.png" width="120" alt="U2分享園@動漫花園" title="U2分享園@動漫花園 - 网站只是一个中介|分享靠的是大家"></a>
+<a href="https://stats.uptimerobot.com/EBZ2lIljZy"><img src="https://stats.uptimerobot.com/assets/img/uptimerobot-logo-dark.svg" width="120" /></a>
 
 ## 鉴权
 > 自动化鉴权 `https://greasyfork.org/zh-CN/scripts/428545`  
