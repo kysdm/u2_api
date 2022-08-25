@@ -54,6 +54,9 @@
 > 请勿滥用此方法  
 > 返回的数据`get_time`时间无法满足需求时，再使用`skip_cache`参数跳过缓存进行请求。
 
+> 为兼容旧结构，保留`ratio`key  
+> `ratio`同`public_ratio`
+
 `GET` `https://u2.kysdm.com/api/v1/promotion_super`
 
 |  参数   | 数据类型  | 说明  |
@@ -61,6 +64,7 @@
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
 | torrent_id | int | 种子ID |
+| valid_uid [optional] | int | 筛选对此用户生效的魔法(包含私有魔法)<br>默认为请求者的UID |
 | skip_cache [optional] | int | `0` 正常请求[默认]<br>`1` 跳过缓存请求 |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/17.png)
@@ -142,7 +146,7 @@
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
 | minseeder [optional] | int | 最小做种人数<br>默认值 `1`|
-| maxseeder [optional] | int | 最小做种人数<br>默认值 `1`|
+| maxseeder [optional] | int | 最大做种人数<br>默认值 `1`|
 | maximum [optional]| int | 返回数据条数<br>默认值 `10`<br>最大 `10000` |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/19.png)
