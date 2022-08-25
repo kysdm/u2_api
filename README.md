@@ -51,7 +51,6 @@
 
 ## 魔法叠加
 > 结果缓存 20s  
-> 请勿滥用此方法  
 > 返回的数据`get_time`时间无法满足需求时，再使用`skip_cache`参数跳过缓存进行请求。
 
 > 为兼容旧结构，保留`ratio`key  
@@ -68,6 +67,21 @@
 | skip_cache [optional] | int | `0` 正常请求[默认]<br>`1` 跳过缓存请求 |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/17.png)
+
+****
+
+## 特定种子当前有效魔法
+> 失效的魔法没什么用，就不返回了。
+
+`GET` `https://u2.kysdm.com/api/v1/promotion_specific`
+
+|  参数   | 数据类型  | 说明  |
+|  ----  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| torrent_id | int | 种子ID |
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/20.png)
 
 ****
 
