@@ -1,6 +1,8 @@
 # U2-API
 
-注意: 当您失去U2的访问权限时，您也会立即失去此API的访问权限。
+注意: 当您失去U2的访问权限时，您也会立即失去此API的访问权限。  
+更新日志：https://u2.dmhy.org/forums.php?action=viewtopic&forumid=7&topicid=13483
+
 
 <a href="https://u2.dmhy.org/"><img src="https://u2.dmhy.org/pic/logo.png" width="120" alt="U2分享園@動漫花園" title="U2分享園@動漫花園 - 网站只是一个中介|分享靠的是大家"></a>
 <a href="https://stats.uptimerobot.com/EBZ2lIljZy"><img src="https://stats.uptimerobot.com/assets/img/uptimerobot-logo-dark.svg" width="120" /></a>
