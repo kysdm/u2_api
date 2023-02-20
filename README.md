@@ -1,6 +1,7 @@
 # U2-API
 
 注意: 当您失去U2的访问权限时，您也会立即失去此API的访问权限。  
+token 至多生效7个，每个 token 有效期为45天，每次成功请求 token 自动续期 。  
 更新日志：https://u2.dmhy.org/forums.php?action=viewtopic&forumid=7&topicid=13483
 
 
