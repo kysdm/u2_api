@@ -349,7 +349,7 @@ token 至多生效7个，每个 token 有效期为45天，每次成功请求 tok
 >> '%abcabc' 可匹配 "__abcabc"
 ```
 
-`POST` `https://u2.kysdm.com/api/v1/check_torrent_name/`
+`POST` `https://u2.kysdm.com/api/v1/search_torrent_name/`
 
 |  参数   | 数据类型  | 说明  |
 |  :--:  | :--:  | ----  |
