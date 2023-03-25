@@ -334,3 +334,31 @@ token 至多生效7个，每个 token 有效期为45天，每次成功请求 tok
 > `type` 确定唯一标识符类型
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/16.png)
+
+
+
+****
+
+## 种子根目录名反查信息
+
+```
+模糊搜索使用示例
+
+>>  'abcabc' 可匹配 "__abcabc__"
+>>  '%ababcc%' 可匹配 "__abcabc__"
+>>  'abcabc%' 可匹配 "abcabc__"
+>>  '%abcabc' 可匹配 "__abcabc"
+```
+
+`POST` `https://u2.kysdm.com/api/v1/check_torrent_name/`
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| torrent_name | str | 种子根目录名 |
+| offset [optional]| int | 数据单次返回5条，通过偏移值查询剩余数据。<br>默认值 `0` |
+| fuzzy_search [optional]| int | 模糊搜索 <启用时`torrent_name`字符长度不得小于6><br>`0` 关闭[默认]<br>`1` 打开 |
+
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/21.png)
