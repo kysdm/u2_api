@@ -343,11 +343,10 @@ token 至多生效7个，每个 token 有效期为45天，每次成功请求 tok
 
 ```
 模糊搜索使用示例
-
->>  'abcabc' 可匹配 "__abcabc__"
->>  '%ababcc%' 可匹配 "__abcabc__"
->>  'abcabc%' 可匹配 "abcabc__"
->>  '%abcabc' 可匹配 "__abcabc"
+>> 'abcabc' 可匹配 "__abcabc__"
+>> '%ababcc%' 可匹配 "__abcabc__"
+>> 'abcabc%' 可匹配 "abcabc__"
+>> '%abcabc' 可匹配 "__abcabc"
 ```
 
 `POST` `https://u2.kysdm.com/api/v1/check_torrent_name/`
