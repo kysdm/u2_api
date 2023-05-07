@@ -88,6 +88,21 @@ token 至多生效7个，每个 token 有效期为45天，每次成功请求 tok
 
 ****
 
+## 按种子体积排序
+
+`GET` `https://u2.kysdm.com/api/v1/sort_torrents_size`
+
+|  参数   | 数据类型  | 说明  |
+|  ----  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| offset [optional]| int | 数据单次返回10条，通过偏移值查询剩余数据。<br>默认值 `0` |
+| sort [optional]| int | 排序方向<br>`0` 从小到大[默认]<br>`1` 从大到小 |
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/22.png)
+
+****
+
 ## 日志
 `GET` `https://u2.kysdm.com/api/v1/log`
 
