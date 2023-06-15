@@ -201,8 +201,10 @@ token 至多生效7个，每个 token 有效期为45天，每次成功请求 tok
 ****
 
 ## 下载列表
-> 结果缓存 60s  
+> 结果缓存 600s  
 > 请勿滥用此方法
+
+> 一个周期(60s)内至多响应6个请求
 
 `GET` `https://u2.kysdm.com/api/v1/torrent_peer`
 
