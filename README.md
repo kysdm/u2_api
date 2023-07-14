@@ -152,6 +152,25 @@ token 至多生效7个，每个 token 有效期为45天，每次成功请求 tok
 
 ****
 
+## 种子当前信息
+
+`GET` `https://u2.kysdm.com/api/v1/torrent_info`
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| torrent  | int | 种子id |
+| hash  | int | 种子hash |
+
+
+> `torrent` 和 `hash` 并存时，将抛弃 `hash`。  
+> 注：在候选区的种子，如果种子文件过大，API 会丢失种子文件相关信息 (即通过 `hash` 会查询不到信息,但 `torrent` 可以)。
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/23.png)
+
+****
+
 ## 新种子
 
 `GET` `https://u2.kysdm.com/api/v1/torrent`
