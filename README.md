@@ -372,7 +372,6 @@ token 至多生效7个，每个 token 有效期为45天，每次成功请求 tok
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/16.png)
 
 
-
 ****
 
 ## 种子根目录名反查信息
@@ -396,3 +395,24 @@ token 至多生效7个，每个 token 有效期为45天，每次成功请求 tok
 
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/21.png)
+
+
+****
+
+## 关键词搜索评论
+
+```
+论坛的搜索先摸了，反正U2就有
+```
+
+`POST` `https://u2.kysdm.com/api/v1/search_comment/`
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| keywords | list | 关键词<br>`注: 当关键词只有一个时，此关键词长度应不小于2。` |
+| desired_user | int | 发帖人UID<br>`注: 将无法搜索匿名帖子` |
+| offset [optional]| int | 数据单次返回50条，通过偏移值查询剩余数据。<br>默认值 `0` |
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/24.png)
