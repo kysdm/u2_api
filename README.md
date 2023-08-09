@@ -412,7 +412,7 @@ token 至多生效7个，每个 token 有效期为45天，每次成功请求 tok
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
 | keywords | list | 关键词<br>`注: 当关键词只有一个时，此关键词长度应不小于2。` |
-| desired_user | int | 发帖人UID<br>`注: 将无法搜索匿名帖子` |
+| desired_user | int | 发帖人uid<br>`注: 将无法搜索匿名帖子` |
 | offset [optional]| int | 数据单次返回50条，通过偏移值查询剩余数据。<br>默认值 `0` |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/24.png)
