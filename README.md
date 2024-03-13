@@ -416,3 +416,22 @@ token 至多生效7个，每个 token 有效期为45天，每次成功请求 tok
 | offset [optional]| int | 数据单次返回50条，通过偏移值查询剩余数据。<br>默认值 `0` |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/24.png)
+
+
+****
+
+## SHA256值查询种子文件路径
+
+```
+现阶段数据不足以支撑这个功能
+```
+
+`GET` `https://u2.kysdm.com/api/v1/filehash/`
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| filehash | str | 文件的HA256值 |
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/25.png)
