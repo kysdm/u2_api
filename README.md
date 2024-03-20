@@ -153,6 +153,7 @@ token 至多生效7个，每个 token 有效期为45天，每次成功请求 tok
 ****
 
 ## 种子当前信息
+> 注：在候选区的种子，如果种子文件过大，API 会丢失种子文件相关信息 (即通过 `hash` 会查询不到信息,但 `torrent_id` 可以)。
 
 `GET` `https://u2.kysdm.com/api/v1/torrent_info`
 
@@ -160,14 +161,31 @@ token 至多生效7个，每个 token 有效期为45天，每次成功请求 tok
 |  :--:  | :--:  | ----  |
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
-| torrent  | int | 种子id |
-| hash  | int | 种子hash |
+| torrent_id  | int | 种子id |
+| hash  | str | 种子hash |
 
 
-> `torrent` 和 `hash` 并存时，将抛弃 `hash`。  
-> 注：在候选区的种子，如果种子文件过大，API 会丢失种子文件相关信息 (即通过 `hash` 会查询不到信息,但 `torrent` 可以)。
+> `torrent_id` 和 `hash` 并存时，将抛弃 `hash`。  
+
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/23.png)
+
+
+`POST` `https://u2.kysdm.com/api/v1/torrents_info/`
+> 注：此方法只返回基础信息，不包含种子结构和种子简介。
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| torrent_id  | str | 种子id组 (单次最大100个<超长截断>) |
+| hash  | str | 种子hash组 (单次最大100个<超长截断>) |
+
+
+> `torrent_id` 和 `hash` 并存时，将抛弃 `hash`。  
+
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/26.png)
 
 ****
 
@@ -432,6 +450,6 @@ token 至多生效7个，每个 token 有效期为45天，每次成功请求 tok
 |  :--:  | :--:  | ----  |
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
-| filehash | str | 文件的HA256值 |
+| filehash | str | 文件的SHA256值 |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/25.png)
