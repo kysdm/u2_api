@@ -139,14 +139,14 @@ token 至多生效7个，每个 token 有效期为45天，每次成功请求 tok
 |  :--:  | :--:  | ----  |
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
-| torrent  | int | 种子id |
+| torrent_id  | int | 种子id |
 | hash  | int | 种子hash |
 | maximum [optional]| int | 返回数据条数<br>默认值 `3`<br>最大 `100` |
 
 > 弃用 diff 改为 history  
 
-> `torrent` 和 `hash` 并存时，将抛弃 `hash`。  
-> 注：在候选区的种子，如果种子文件过大，API 会丢失种子文件相关信息 (即通过 `hash` 会查询不到信息,但 `torrent` 可以)。
+> `torrent_id` 和 `hash` 并存时，将抛弃 `hash`。  
+> 注：~~在候选区的种子，如果种子文件过大，API 会丢失种子文件相关信息 (即通过 `hash` 会查询不到信息,但 `torrent_id` 可以)。~~　　从 2024.4.16 开始此问题不再出现
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/6.png)
 
