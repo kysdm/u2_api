@@ -450,3 +450,14 @@ token 至多生效7个，每个 token 有效期为45天，每次成功请求 tok
 | filehash | str | 文件的SHA256值 |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/25.png)
+
+
+`POST` `https://u2.kysdm.com/api/v1/filehash/`
+
+|  参数   | 数据类型  | 说明  |
+|  :--:  | :--:  | ----  |
+| uid  | int | u2账户id |
+| token  | str | 鉴权中返回的值 |
+| filehashes | list | 文件的SHA256值 |
+
+![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/27.png)
