@@ -458,6 +458,6 @@ token 至多生效7个，每个 token 有效期为45天，每次成功请求 tok
 |  :--:  | :--:  | ----  |
 | uid  | int | u2账户id |
 | token  | str | 鉴权中返回的值 |
-| filehashes | list | 文件的SHA256值 |
+| filehashes | list | 文件的SHA256值(单次最大100个) |
 
 ![](https://raw.githubusercontent.com/kysdm/u2_api/main/img/27.png)
